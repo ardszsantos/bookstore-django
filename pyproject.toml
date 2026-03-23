@@ -1,0 +1,22 @@
+[project]
+name = "bookstore"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ale r",email = "lokgamer01@gmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django (>=6.0.3,<7.0.0)",
+    "djangorestframework (>=3.17.0,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.3.1,<27.0.0)"
+]
