@@ -13,7 +13,11 @@ def home(request):
         if token:
             token_key = token.key
 
-    return render(request, "api/home.html", {
-        "total_books": Book.objects.count(),
-        "token_key": token_key,
-    })
+    return render(
+        request,
+        "api/home.html",
+        {
+            "total_books": Book.objects.count(),
+            "token_key": token_key,
+        },
+    )
